@@ -1,0 +1,13 @@
+# Ignorar archivos de entorno
+.env
+
+# Ignorar archivos y carpetas de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Ignorar archivos de entorno virtual
+venv/

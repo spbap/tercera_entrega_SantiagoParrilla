@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmar Eliminación</title>
+</head>
+<body>
+    <h1>¿Está seguro que desea eliminar esta {{ object_type }}?</h1>
+    <p>{{ object }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Eliminar</button>
+    </form>
+    <a href="{% url 'home' %}">Cancelar</a>
+</body>
+</html>
